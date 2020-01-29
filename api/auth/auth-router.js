@@ -3,7 +3,7 @@ const router = require('express').Router();
 const bcrypt = require('bcryptjs');
 
 const tokenMaker = require('../../middleware/token-maker.js');
-const Users = require('../users/users-model.js');
+const Users = require('../users/users-model');
 
 router.post('/register', (req, res) => {
     let user = req.body;
